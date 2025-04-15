@@ -11,9 +11,11 @@
       <% if (products?.length > 0) { %>
       <ul>
         <% products.forEach(product => { %>
-        <li>
-          Name: <%= product.name %>, Description: <%= product.description %>
-        </li>
+          <li>
+            Name: <%= product.name %> %>
+            <a href="/products/<%= encodeURIComponent(product.name) %>">Details</a>
+            <button onclick="deleteProduct('<%= product.name %>')">Delete</button>
+          </li>
         <% }); %>
       </ul>
       <% } else { %>
