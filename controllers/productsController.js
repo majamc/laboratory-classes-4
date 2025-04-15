@@ -1,6 +1,6 @@
 const Product = require('../models/Product');
 const { STATUS_CODE } = require('../constants/statusCode');
-const MENU_LINKS = require('../constants/navigation');
+const { MENU_LINKS } = require("../constants/navigation");
 
 const getProductsView = (_request, response) => {
   const products = Product.getAll();

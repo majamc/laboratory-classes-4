@@ -1,4 +1,5 @@
-const LOGOUT_LINKS = require('../constants/navigation');
+const {LOGOUT_LINKS} = require('../constants/navigation');
+const logger = require('../utils/logger');
 
 const getLogoutView = (_request, response) => {
     response.render("logout.ejs", {

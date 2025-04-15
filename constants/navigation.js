@@ -19,4 +19,5 @@ const MENU_LINKS = [
 module.exports = {
   MENU_LINKS,
   LOGOUT_LINKS,
+  HOME_LINK
 };
